@@ -35,7 +35,6 @@ particle happy_villager ~ ~ ~ 1.5 1 1.5 1 20 normal
     fill ~-3 ~-1 ~-3 ~3 ~-3 ~3 beetroots[age=2] replace beetroots[age=1]
     fill ~-3 ~-1 ~-3 ~3 ~-3 ~3 beetroots[age=1] replace beetroots[age=0]
     #> Berries
-
     fill ~-3 ~-1 ~-3 ~3 ~-3 ~3 sweet_berry_bush[age=3] replace sweet_berry_bush[age=2]
     fill ~-3 ~-1 ~-3 ~3 ~-3 ~3 sweet_berry_bush[age=2] replace sweet_berry_bush[age=1]
     fill ~-3 ~-1 ~-3 ~3 ~-3 ~3 sweet_berry_bush[age=1] replace sweet_berry_bush[age=0]

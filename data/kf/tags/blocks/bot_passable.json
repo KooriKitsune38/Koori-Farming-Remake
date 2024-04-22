@@ -3,6 +3,7 @@
         "#crops",
         "air",
         "void_air",
-        "cave_air"
+        "cave_air",
+        "sweet_berry_bush"
     ]
 }

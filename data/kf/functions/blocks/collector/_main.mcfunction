@@ -1,7 +1,10 @@
 #> kf:blocks/collector/_main
 
 # Place if tag .temp
-execute if entity @s[tag=.temp] align xyz positioned ~.5 ~ ~.5 run function kf:blocks/collector/_place
+execute if entity @s[tag=.temp] align xyz positioned ~.5 ~ ~.5 if block ~ ~ ~ #kf:collector_placeable run function kf:blocks/collector/_place
+
+# If no barrel, kill
+execute unless block ~ ~ ~ barrel run kill @s
 
 # Tag if full
 execute store result score .slotsOccupied k.Values run data get block ~ ~ ~ Items

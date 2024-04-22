@@ -12,4 +12,4 @@ scoreboard players reset .success k.Values
     #> Check Sides
     execute positioned ~ ~-1 ~ run function kf:entities/harvester/movement/check_sides
     #> Check Turning Back
-    execute unless score .success k.Values matches 1 rotated ~180 ~ run function kf:entities/harvester/movement/move
+    execute unless score .success k.Values matches 1 positioned ~ ~-1 ~ if block ^ ^ ^-1 #kf:bot_walkable positioned ~ ~1 ~ rotated ~180 ~ run function kf:entities/harvester/movement/move

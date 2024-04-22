@@ -9,6 +9,14 @@
     execute store result score .rotation kf.HarvesterMovement run data get entity @s Rotation[0]
     execute on passengers store result entity @s Rotation[0] float 1 run scoreboard players get .rotation kf.HarvesterMovement
 
+    #> Debug Particles
     particle composter ^1 ^ ^ 0 0 0 1 1 normal @a[tag=debug]
     particle composter ^-1 ^ ^ 0 0 0 1 1 normal @a[tag=debug]
     particle composter ^ ^ ^1 0 0 0 1 1 normal @a[tag=debug]
+
+# Harvesting (If collector nearby)
+    #> Return the collector, if tier list
+    function kf:entities/harvester/harvesting/_tiers
+
+    #> If success, then harvest
+    execute if score .success k.Values matches 1 run function kf:entities/harvester/harvesting/check_crop

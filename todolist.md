@@ -9,3 +9,5 @@
 - automatic mushrooms
 - set the slime to invulnerable and check if it's being hit by the owner
 - add beekeeping
+- Collector range tiers
+- Filtered Collectors
