@@ -11,3 +11,6 @@
 - add beekeeping
 - Collector range tiers
 - Filtered Collectors
+- Windmill provides power
+- Water mills provide less power but waters cauldrons
+- Power system
