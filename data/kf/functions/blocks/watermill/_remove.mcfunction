@@ -5,6 +5,9 @@
 # Kill
 kill @s
 
+# Remove fence
+fill ~ ~ ~ ~ ~ ~ air replace oak_fence
+
 # Particle
 particle block oak_fence ~ ~ ~ .1 .1 .1 1 5 normal
 
