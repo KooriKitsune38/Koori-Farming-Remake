@@ -9,3 +9,6 @@ tp ~ ~ ~
 # Tag
 tag @s remove .temp
 tag @s add .rotate
+
+# Playsound
+playsound block.wood.place block @a ~ ~ ~ 

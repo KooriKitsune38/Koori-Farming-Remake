@@ -14,7 +14,7 @@ scoreboard players reset .poweredEntities kf.Power
         scoreboard players operation .poweredEntities kf.Power *= .powerMultiplier kf.Power
         scoreboard players operation @s kf.Power -= .poweredEntities kf.Power
         #> Cap Power
-        execute if score @s kf.Power matches 30000.. run scoreboard players set @s kf.Power 30000
+        execute if score @s kf.Power matches 3000.. run scoreboard players set @s kf.Power 3000
 
 # Name
 execute if score .poweredEntities kf.Power matches 1.. run data modify entity @s CustomName set value '{"text":"Active","color":"green"}'

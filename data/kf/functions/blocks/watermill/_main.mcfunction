@@ -10,4 +10,8 @@ execute if entity @s[tag=.temp] align xyz positioned ~.5 ~.5 ~.5 if block ~ ~ ~ 
 execute if block ~ ~-1 ~ water run function kf:blocks/watermill/active
 
 # If no oak fence, kill
-execute unless block ~ ~ ~ oak_fence run kill @s
+    #> No Block
+    execute unless block ~ ~ ~ oak_fence run function kf:blocks/watermill/_remove
+    #> If one or more entities
+    execute store result score .nearbyWatermills k.Values if entity @e[distance=..2,tag=kf.WaterMill]
+    execute if score .nearbyWatermills k.Values matches 2.. run function kf:blocks/watermill/_remove

@@ -8,3 +8,6 @@ execute at @s align xyz unless entity @e[type=slime,dx=0,tag=kf.Harvester] run s
 
 # Kill marker
 kill @s[type=marker]
+
+# Playsound
+playsound entity.puffer_fish.blow_up neutral @a ~ ~ ~ 1 2

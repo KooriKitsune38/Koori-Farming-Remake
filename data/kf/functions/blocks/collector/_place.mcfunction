@@ -8,3 +8,6 @@ tp ~ ~ ~
 
 # Tag remove
 tag @s remove .temp
+
+# Playsound
+playsound block.wood.place block @a ~ ~ ~ 

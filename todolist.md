@@ -1,4 +1,4 @@
-- add automatic tilling to bot
+- add automatic tilling to bot (by naming it with a special name tag, which will give the tag)
 - add area tilling
 - add area harvest
 - add speed to bot
@@ -12,5 +12,5 @@
 - Collector range tiers
 - Filtered Collectors
 - Windmill provides power
-- Water mills provide less power but waters cauldrons
-- Power system
+* Water mills provide less power but waters cauldrons
+* Power system

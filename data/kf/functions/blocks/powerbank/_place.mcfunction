@@ -14,3 +14,7 @@ data merge entity @s {Rotation:[0f,0f],CustomNameVisible:1b,item:{id:"beacon",Co
 
 # Add power
 scoreboard players add @s kf.Power 0
+
+# Playsound
+playsound block.glass.place block @a ~ ~ ~ 1 1
+playsound block.beacon.activate block @a ~ ~ ~ 1 2
