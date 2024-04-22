@@ -4,6 +4,7 @@
     #> Objectives
     scoreboard objectives add kf.WateringTimer dummy
     scoreboard objectives add kf.HarvesterMovement dummy
+    scoreboard objectives add kf.CollectorUUIDs dummy
     scoreboard objectives add k.Values dummy
     #> Players
     scoreboard players set .bonemealInterval kf.WateringTimer 200
