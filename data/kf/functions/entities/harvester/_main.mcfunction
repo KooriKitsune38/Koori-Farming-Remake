@@ -9,6 +9,6 @@
     execute store result score .rotation kf.HarvesterMovement run data get entity @s Rotation[0]
     execute on passengers store result entity @s Rotation[0] float 1 run scoreboard players get .rotation kf.HarvesterMovement
 
-    particle composter ^1 ^ ^
-    particle composter ^-1 ^ ^
-    particle composter ^ ^ ^1
+    particle composter ^1 ^ ^ 0 0 0 1 1 normal @a[tag=debug]
+    particle composter ^-1 ^ ^ 0 0 0 1 1 normal @a[tag=debug]
+    particle composter ^ ^ ^1 0 0 0 1 1 normal @a[tag=debug]
