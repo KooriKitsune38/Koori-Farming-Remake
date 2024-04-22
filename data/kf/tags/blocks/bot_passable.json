@@ -1,6 +1,8 @@
 {
     "values": [
         "#crops",
+        "attached_melon_stem",
+        "attached_pumpkin_stem",
         "air",
         "void_air",
         "cave_air",
