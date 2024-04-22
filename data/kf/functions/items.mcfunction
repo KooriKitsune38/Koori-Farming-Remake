@@ -13,4 +13,4 @@ give @s llama_spawn_egg{display:{Name:'{"text":"Collector"}'},EntityTag:{id:"mar
 give @s ghast_spawn_egg{display:{Name:'{"text":"Power Bank"}'},EntityTag:{id:"item_display",Rotation:[0f,0f],Tags:[kf.PowerBank,.temp]}}
 
 # Water Mill
-give @s allay_spawn_egg{display:{Name:'{"text":"Water Mill"}'},EntityTag:{id:"block_display",Rotation:[0f,0f],Tags:[kf.WaterMill,.temp],block_state:{Name:"oak_trapdoor"},transformation:{translation:[-.2f,1f,-1f],left_rotation:[0f,0f,-0.703f,0.711f],scale:[2f,2f,2f],right_rotation:[0f,0f,0f,1f]}}}
+give @s allay_spawn_egg{display:{Name:'{"text":"Water Mill"}'},EntityTag:{id:"block_display",Rotation:[0f,0f],Tags:[kf.WaterMill,.temp],block_state:{Name:"oak_trapdoor"},teleport_duration:1,transformation:{translation:[-.2f,1f,-1f],left_rotation:[0f,0f,-0.703f,0.711f],scale:[2f,2f,2f],right_rotation:[0f,0f,0f,1f]}}}
