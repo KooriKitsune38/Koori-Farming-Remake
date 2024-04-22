@@ -3,7 +3,7 @@
 # It's hardcoded :(
 
 # Particles
-particle composter ~ ~ ~ .2 .2 .2 1 20 normal
+particle happy_villager ~ ~ ~ 1.5 1 1.5 1 20 normal
 
 # Fill blocks
     #> Wheat

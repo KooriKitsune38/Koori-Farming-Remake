@@ -27,7 +27,7 @@ execute if score .modulo kf.WateringTimer matches 0 unless score .nearbySprinkle
 
 # Particles
     #> Ambient
-    particle rain ^ ^ ^1 .1 .2 .1 1 1 normal
+    particle falling_water ^ ^ ^1 .1 .2 .1 1 1 normal
     #> Two sprinkler
     execute if score .nearbySprinklers kf.WateringTimer matches 2 run particle bubble ~ ~ ~ .25 .25 .25 0 1 normal
     #> Three or more sprinklers
