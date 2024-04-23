@@ -14,6 +14,9 @@
     particle composter ^-1 ^ ^ 0 0 0 1 1 normal @a[tag=debug]
     particle composter ^ ^ ^1 0 0 0 1 1 normal @a[tag=debug]
 
+# If there's a block, give resistance
+execute if block ~ ~ ~ #kf:block_crop run effect give @s resistance 1 255 true
+
 # Harvesting (If collector nearby)
     #> Return the collector, if tier list
     function kf:entities/harvester/harvesting/_tiers
