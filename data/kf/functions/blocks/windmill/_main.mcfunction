@@ -8,7 +8,7 @@ scoreboard players add @e[type=item_display,distance=..50,tag=kf.PowerBank,limit
 scoreboard players add @e[type=item_display,distance=..50,tag=kf.PowerBank,limit=1,sort=nearest,scores={kf.Power=..-1}] kf.Power 1
 
 # Rotate
-tp @s ~ ~ ~ ~-10 ~
+execute at @s run tp @s ~ ~ ~ ~-10 ~
 
 # If no oak fence, kill
     #> No Block
