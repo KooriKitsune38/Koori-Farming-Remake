@@ -11,3 +11,6 @@
     scoreboard players set .bonemealInterval kf.WateringTimer 200
     scoreboard players set .timerMultiplier kf.WateringTimer 10
     scoreboard players set .powerMultiplier kf.Power 15
+
+# Schedules
+schedule function kf:blocks/watermill/adjust_schedule 1t replace
