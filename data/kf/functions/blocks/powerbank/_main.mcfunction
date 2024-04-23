@@ -4,7 +4,7 @@
 execute if entity @s[tag=.temp] align xyz positioned ~.5 ~.9 ~.5 if block ~ ~ ~ #kf:block_placeable run function kf:blocks/powerbank/_place
 
 # If no glass, remove
-execute unless block ~ ~ ~ glass run kill @s
+execute unless block ~ ~ ~ glass run function kf:blocks/powerbank/_remove
 
 # State
     #> Powered

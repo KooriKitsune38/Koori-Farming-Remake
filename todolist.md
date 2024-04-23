@@ -1,4 +1,5 @@
 - add automatic tilling to bot (by naming it with a special name tag, which will give the tag)
+- Sprinkles can be upgraded by throwing an item on the cauldron
 - add area tilling
 - add area harvest
 - add speed to bot
@@ -11,6 +12,6 @@
 - add beekeeping
 - Collector range tiers
 - Filtered Collectors
-- Windmill provides power
+- Windmill provides power (Use a block that rotates horizontally, like cobweb or idk)
 * Water mills provide less power but waters cauldrons
 * Power system
