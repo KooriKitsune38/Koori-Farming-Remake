@@ -14,3 +14,6 @@ give @s ghast_spawn_egg{display:{Name:'{"text":"Power Bank"}'},EntityTag:{id:"it
 
 # Water Mill
 give @s allay_spawn_egg{display:{Name:'{"text":"Water Mill"}'},EntityTag:{id:"block_display",Rotation:[0f,0f],Tags:[kf.WaterMill,.temp],block_state:{Name:"oak_trapdoor"},transformation:{translation:[-.2f,1f,-1f],left_rotation:[0f,0f,-0.703f,0.711f],scale:[2f,2f,2f],right_rotation:[0f,0f,0f,1f]}}}
+
+# Wind Mill
+give @s ghast_spawn_egg{display:{Name:'{"text":"Wind Mill"}'},EntityTag:{id:"block_display",Rotation:[0f,0f],Tags:[kf.WindMill,.temp],block_state:{Name:"cobweb"},transformation:{translation:[-1f,-1f,-1f],left_rotation:[0f,0f,0f,11f],scale:[1.5f,2f,1.5f],right_rotation:[0f,0f,0f,1f]}}}

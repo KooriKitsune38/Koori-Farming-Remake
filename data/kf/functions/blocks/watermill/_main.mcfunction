@@ -7,7 +7,10 @@ execute if entity @s[tag=.rotate] run function kf:blocks/watermill/adjust
 execute if entity @s[tag=.temp] align xyz positioned ~.5 ~.5 ~.5 if block ~ ~ ~ #kf:block_placeable run function kf:blocks/watermill/_place
 
 # Rotation
-execute if block ~ ~-1 ~ water run function kf:blocks/watermill/active
+scoreboard players reset .success k.Values
+execute if block ^1 ^ ^ water run scoreboard players set .success k.Values 1
+execute if block ^-1 ^ ^ water run scoreboard players set .success k.Values 1
+execute if score .success k.Values matches 1 if block ~ ~-1 ~ water run function kf:blocks/watermill/active
 
 # If no oak fence, kill
     #> No Block
