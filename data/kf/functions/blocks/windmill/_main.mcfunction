@@ -7,6 +7,9 @@ execute if entity @s[tag=.temp] align xyz positioned ~.5 ~.5 ~.5 if block ~ ~ ~ 
 scoreboard players add @e[type=item_display,distance=..50,tag=kf.PowerBank,limit=1,sort=nearest,scores={kf.Power=0..}] kf.Power 50
 scoreboard players add @e[type=item_display,distance=..50,tag=kf.PowerBank,limit=1,sort=nearest,scores={kf.Power=..-1}] kf.Power 1
 
+# Rotate
+tp @s ~ ~ ~ ~-10 ~
+
 # If no oak fence, kill
     #> No Block
     execute unless block ~ ~ ~ oak_fence run function kf:blocks/windmill/_remove
