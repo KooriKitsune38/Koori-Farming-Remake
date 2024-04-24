@@ -10,9 +10,9 @@ scoreboard players reset .poweredEntities kf.Power
         #> Give Power
         execute as @e[tag=kf.RequiresPower,tag=!kf.Powered,distance=..30] run function kf:blocks/powerbank/power_entities
         #> Remove Power
-        execute as @e[tag=kf.Powered,distance=..30] if score @s kf.PowerUUIDs = .tempUUID kf.PowerUUIDs run scoreboard players add .poweredEntities kf.Power 1
-        scoreboard players operation .poweredEntities kf.Power *= .powerMultiplier kf.Power
-        scoreboard players operation @s kf.Power -= .poweredEntities kf.Power
+        scoreboard players reset .powerExpense kf.Power
+        execute as @e[tag=kf.Powered,distance=..30] if score @s kf.PowerUUIDs = .tempUUID kf.PowerUUIDs run function kf:blocks/powerbank/power_usage
+        scoreboard players operation @s kf.Power -= .powerExpense kf.Power
 
 # Name
 execute if score .poweredEntities kf.Power matches 1.. run data modify entity @s CustomName set value '{"text":"Active","color":"green"}'

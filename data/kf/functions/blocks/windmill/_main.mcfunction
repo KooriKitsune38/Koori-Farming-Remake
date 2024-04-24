@@ -4,8 +4,7 @@
 execute if entity @s[tag=.temp] align xyz positioned ~.5 ~.5 ~.5 if block ~ ~ ~ #kf:block_placeable run function kf:blocks/windmill/_place
 
 # Add to nearest bank
-scoreboard players add @e[type=item_display,distance=..50,tag=kf.PowerBank,limit=1,sort=nearest,scores={kf.Power=0..}] kf.Power 50
-scoreboard players add @e[type=item_display,distance=..50,tag=kf.PowerBank,limit=1,sort=nearest,scores={kf.Power=..-1}] kf.Power 1
+scoreboard players add @e[type=item_display,distance=..50,tag=kf.PowerBank,limit=1,sort=nearest] kf.ReceivingPower 50
 
 # Rotate
 execute at @s run tp @s ~ ~ ~ ~-10 ~

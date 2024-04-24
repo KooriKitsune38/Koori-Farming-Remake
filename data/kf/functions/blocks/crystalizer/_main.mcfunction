@@ -4,10 +4,7 @@
 execute if entity @s[tag=.temp] align xyz positioned ~.5 ~ ~.5 if block ~ ~ ~ #kf:block_placeable run function kf:blocks/crystalizer/_place
 
 # Generation
-    #> Timer
-    function kf:blocks/crystalizer/timer
-    #> Generate
-    execute if score @s kf.Crystalization matches ..0 positioned ~ ~1 ~ run function #kf:crystalizer/crystalize
+execute if entity @s[tag=kf.Powered] run function kf:blocks/crystalizer/active
 
 # If no chsieled stone brick, kill
 execute unless block ~ ~ ~ chiseled_stone_bricks run function kf:blocks/crystalizer/_remove
