@@ -3,11 +3,15 @@
 # If .temp, place block
 execute if entity @s[tag=.temp] align xyz positioned ~.5 ~.9 ~.5 if block ~ ~ ~ #kf:block_placeable run function kf:blocks/powerbank/_place
 
-# If no glass, remove
-execute unless block ~ ~ ~ glass run function kf:blocks/powerbank/_remove
-
 # State
     #> Powered
-    execute if score @s kf.Power matches 1.. run function kf:blocks/powerbank/powered
+    execute unless block ~ ~1 ~ lever[powered=false] if score @s kf.Power matches 1.. run function kf:blocks/powerbank/powered
     #> Unpowered
+    execute if block ~ ~1 ~ lever[powered=false] run function kf:blocks/powerbank/inactive
     execute if score @s kf.Power matches ..-0 run function kf:blocks/powerbank/inactive
+
+# Display Power to nearby
+execute unless score @s kf.Power matches ..0 run title @a[distance=..1.5] actionbar [{"text": "Power: ","color":"gold"},{"score":{"name":"@s","objective": "kf.Power"},"color": "aqua"}]
+
+# If no glass, remove
+execute unless block ~ ~ ~ glass run function kf:blocks/powerbank/_remove
