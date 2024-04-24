@@ -17,3 +17,6 @@ give @s allay_spawn_egg{display:{Name:'{"text":"Water Mill"}'},EntityTag:{id:"bl
 
 # Wind Mill
 give @s ghast_spawn_egg{display:{Name:'{"text":"Wind Mill"}'},EntityTag:{id:"block_display",Rotation:[0f,0f],Tags:[kf.WindMill,.temp],block_state:{Name:"cobweb"},teleport_duration:1,transformation:{translation:[-1f,-1f,-1f],left_rotation:[0f,0f,0f,1f],scale:[2f,2f,2f],right_rotation:[0f,0f,0f,1f]}}}
+
+# Wind Mill
+give @s skeleton_spawn_egg{display:{Name:'{"text":"Crystalizer"}'},EntityTag:{id:"marker",Rotation:[0f,0f],Tags:[kf.Crystalizer,.temp,kf.RequiresPower]}}

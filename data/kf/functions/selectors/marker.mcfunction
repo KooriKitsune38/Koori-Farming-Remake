@@ -5,3 +5,6 @@ execute if entity @s[tag=kf.Harvester,tag=.temp] align xyz run function kf:entit
 
 # If kf.Collector
 execute if entity @s[tag=kf.Collector] run function kf:blocks/collector/_main 
+
+# Crystalizer
+execute if entity @s[tag=kf.Crystalizer] run function kf:blocks/crystalizer/_main
