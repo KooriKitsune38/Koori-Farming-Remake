@@ -23,3 +23,4 @@
 - Random tips
 - Minecart Composter (/summon minecraft:hopper_minecart ~ ~ ~ {DisplayState:{Name:"minecraft:composter"},DisplayOffset:4,CustomDisplayTile:true})
 - Add the generator, sprinkler, and watermill to base island
+- If bonemeal in cauldron, increase chances of growth
