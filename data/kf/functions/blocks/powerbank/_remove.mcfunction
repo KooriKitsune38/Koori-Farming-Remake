@@ -1,9 +1,11 @@
 #> kf:blocks/powerbank/_remove
 
 # Drop Item
+summon item ~ ~ ~ {Item:{id:"minecraft:ghast_spawn_egg",Count:1b,tag:{display:{Name:'{"text":"Power Bank","italic":false}'},EntityTag:{id:"item_display",Rotation:[0f,0f],Tags:[kf.PowerBank,.temp]}}}}
 
 # Kill
 kill @s
+kill @e[type=item,nbt={Item:{id:"minecraft:glass",Count:1b}},distance=..2,limit=1]
 
 # Remove fence
 fill ~ ~ ~ ~ ~ ~ air replace glass

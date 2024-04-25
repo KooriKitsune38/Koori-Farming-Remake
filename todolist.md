@@ -20,3 +20,6 @@
 * Water mills provide less power but waters cauldrons
 * Power system
 - Bread into wheat and other stuff
+- Random tips
+- Minecart Composter (/summon minecraft:hopper_minecart ~ ~ ~ {DisplayState:{Name:"minecraft:composter"},DisplayOffset:4,CustomDisplayTile:true})
+- Add the generator, sprinkler, and watermill to base island
