@@ -11,7 +11,7 @@ execute at @s run tp @s ~ ~ ~ ~-10 ~
 
 # If no oak fence, kill
     #> No Block
-    execute unless block ~ ~ ~ oak_fence run function kf:blocks/windmill/_remove
+    execute store success score .success k.Values unless block ~ ~1 ~ #kf:sprinkler unless block ~ ~ ~ oak_fence run function kf:blocks/windmill/_remove
     #> If one or more entities
     execute store result score .nearbyEntities k.Values if entity @e[distance=..2,tag=kf.WindMill]
-    execute if score .nearbyEntities k.Values matches 2.. run function kf:blocks/windmill/_remove
+    execute unless score .success k.Values matches 1 if score .nearbyEntities k.Values matches 2.. run function kf:blocks/windmill/_remove
