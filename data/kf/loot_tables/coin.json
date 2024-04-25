@@ -11,7 +11,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{ka.Coin:1b}"
+                "tag": "{k.Coin:1b}"
               },
               {
                 "function": "minecraft:set_lore",
