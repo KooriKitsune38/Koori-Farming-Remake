@@ -25,3 +25,7 @@
 - Add the generator, sprinkler, and watermill to base island
 - If bonemeal in cauldron, increase chances of growth
 - 2 Sprinklers nearby won't get water from watermills
+- Ironman mode runescape hypixel
+- CustomModelData
+- Base island with eggs
+- CRystalizer!!!

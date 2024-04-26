@@ -12,5 +12,6 @@
     fill ~1 ~ ~1 ~-1 ~1 ~-1 air replace structure_void
 
 # If available, store success
-execute store success score .success k.Values if score .availableBlocks kf.Crystalization matches 14 run function kf:blocks/crystalizer/crystalize
+scoreboard players reset .success k.Values
+execute if score .availableBlocks kf.Crystalization matches 14 run function kf:blocks/crystalizer/crystalize
 execute unless score .success k.Values matches 1 run particle angry_villager ~ ~ ~ 1 .5 1 1 10
