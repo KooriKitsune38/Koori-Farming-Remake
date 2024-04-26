@@ -24,6 +24,7 @@ execute store result score .goldBlocks kf.Crystalization run fill ~-1 ~-1 ~-1 ~1
 fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 gold_block replace void_air
 execute store result score .diamondBlocks kf.Crystalization run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 void_air replace diamond_block
 fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 diamond_block replace void_air
+execute if score .coalBlocks kf.Crystalization matches 8 run scoreboard players set .success k.Values 1
 execute if score .ironBlocks kf.Crystalization matches 8 run scoreboard players set .success k.Values 1
 execute if score .goldBlocks kf.Crystalization matches 8 run scoreboard players set .success k.Values 1
 execute if score .diamondBlocks kf.Crystalization matches 8 run scoreboard players set .success k.Values 1
