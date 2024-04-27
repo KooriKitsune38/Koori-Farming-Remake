@@ -17,6 +17,9 @@
 # If there's a block, give resistance
 execute if block ~ ~ ~ #kf:block_crop run effect give @s resistance 1 255 true
 
+# If no powerbank nearby, remove power
+execute unless entity @e[type=item_display,tag=kf.PowerBank,scores={kf.Power=1..},distance=..30] run tag @s remove kf.Powered
+
 # Harvesting (If collector nearby)
     #> Return the collector, if tier list
     function kf:entities/harvester/harvesting/_tiers

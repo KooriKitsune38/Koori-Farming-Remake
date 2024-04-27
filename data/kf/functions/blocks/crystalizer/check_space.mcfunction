@@ -1,5 +1,10 @@
 #> kf:blocks/crystalizer/check_space
 
+# Remove Ores
+fill ~-1 ~ ~-1 ~1 ~ ~1 air replace #kf:ores
+fill ~-1 ~1 ~ ~1 ~1 ~ air replace #kf:ores
+fill ~ ~1 ~1 ~ ~1 ~-1 air replace #kf:ores
+
 # Fill gaps
     fill ~1 ~1 ~1 ~1 ~1 ~1 structure_void replace air
     fill ~-1 ~1 ~1 ~-1 ~1 ~1 structure_void replace air

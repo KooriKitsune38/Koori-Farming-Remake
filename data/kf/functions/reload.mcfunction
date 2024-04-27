@@ -15,3 +15,4 @@
 
 # Schedules
 schedule function kf:blocks/watermill/adjust_schedule 1t replace
+schedule function kf:entities/villagers/_schedule 1t replace

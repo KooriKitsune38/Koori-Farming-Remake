@@ -15,10 +15,6 @@
 - Cosmetics
 - Something about flowers
 - Feeding fishes
-- Power being displayed as bossbar to nearby players, or actionbar idk
-* Windmill provides power (Use a block that rotates horizontally, like cobweb or idk)
-* Water mills provide less power but waters cauldrons
-* Power system
 - Bread into wheat and other stuff
 - Random tips
 - Minecart Composter (/summon minecraft:hopper_minecart ~ ~ ~ {DisplayState:{Name:"minecraft:composter"},DisplayOffset:4,CustomDisplayTile:true})
@@ -27,5 +23,15 @@
 - 2 Sprinklers nearby won't get water from watermills
 - Ironman mode runescape hypixel
 - CustomModelData
-- Base island with eggs
-- CRystalizer!!!
+- Daily quests
+- Dungeons
+- Crystalizer Deepslate, blacstone, Amethyst, Lapis, quartz
+- Parkour Area
+- Gadgets like grappling hook
+- Mobs to villager and beez
+- Trading hall
+- Kick Command
+- If no generator nearby, remove from power
+- Kick players from island (players must have id to tp)
+- Can't accept tp outside of your island
+- If -100y tp spawn

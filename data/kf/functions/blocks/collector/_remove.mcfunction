@@ -5,7 +5,7 @@ summon item ~ ~ ~ {Item:{id:"minecraft:llama_spawn_egg",Count:1b,tag:{display:{N
 
 # Kill
 kill @s
-kill @e[type=item,nbt={Item:{id:"minecraft:oak_fence",Count:1b}},distance=..2,limit=1]
+kill @e[type=item,nbt={Item:{id:"minecraft:barrel",Count:1b}},distance=..2,limit=1]
 
 # Remove fence
 fill ~ ~ ~ ~ ~ ~ air replace barrel
