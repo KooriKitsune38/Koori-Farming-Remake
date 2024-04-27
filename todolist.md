@@ -33,5 +33,4 @@
 - Kick Command
 - If no generator nearby, remove from power
 - Kick players from island (players must have id to tp)
-- Can't accept tp outside of your island
 - If -100y tp spawn
