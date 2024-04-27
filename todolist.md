@@ -34,3 +34,5 @@
 - If no generator nearby, remove from power
 - Kick players from island (players must have id to tp)
 - If -100y tp spawn
+- Tp back to home if far
+- Sethome only if onGround
