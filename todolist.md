@@ -9,7 +9,6 @@
 - automatic butcher
 - automatic mushrooms
 - set the slime to invulnerable and check if it's being hit by the owner
-- add beekeeping
 - Collector range tiers
 - Filtered Collectors
 - Cosmetics
@@ -17,8 +16,6 @@
 - Feeding fishes
 - Bread into wheat and other stuff
 - Random tips
-- Minecart Composter (/summon minecraft:hopper_minecart ~ ~ ~ {DisplayState:{Name:"minecraft:composter"},DisplayOffset:4,CustomDisplayTile:true})
-- Add the generator, sprinkler, and watermill to base island
 - If bonemeal in cauldron, increase chances of growth
 - 2 Sprinklers nearby won't get water from watermills
 - Ironman mode runescape hypixel
@@ -36,3 +33,7 @@
 - If -100y tp spawn
 - Tp back to home if far
 - Sethome only if onGround
+- Coop home
+- Power banks are infinite if 2 nearby
+- players:[{id:#,homePos:{},coopIslands:[{id:#,homePos:{}}]}]
+- If player is in another island without id, tp spawn
