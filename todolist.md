@@ -32,9 +32,9 @@
 - Kick players from island (players must have id to tp)
 - If -100y tp spawn
 - Tp back to home if far
-- Sethome only if onGround
-- Coop home
 - Power banks are infinite if 2 nearby
-- players:[{id:#,homePos:{},coopIslands:[{id:#,homePos:{}}]}]
 - If player is in another island without id, tp spawn
 - ADD WINGS (limited)
+- Can't place if there's a watermill/windmill too
+- Bank make left and right click instead
+- Visit system /set_visit /visit with list and retrieves the thing
