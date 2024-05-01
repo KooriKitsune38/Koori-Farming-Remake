@@ -4,7 +4,7 @@
 execute if entity @s[tag=.temp] align xyz positioned ~.5 ~.9 ~.5 if block ~ ~ ~ #kf:block_placeable run function kf:blocks/powerbank/_place
 
 # Receive Power
-execute unless entity @s[tag=kf.Inactive] run scoreboard players operation @s kf.Power += @s kf.ReceivingPower
+scoreboard players operation @s kf.Power += @s kf.ReceivingPower
 
 # State
 #> Cap Power

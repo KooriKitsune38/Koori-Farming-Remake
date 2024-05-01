@@ -3,11 +3,12 @@
 # Rotate
 execute at @s run function kf:blocks/watermill/rotate
 
-# Add to nearest bank
-scoreboard players add @e[type=item_display,distance=..50,tag=kf.PowerBank,limit=1,sort=nearest] kf.ReceivingPower 20
+# Nearest Bank
+scoreboard players set .powerSupply kf.ReceivingPower 20
+execute as @e[type=item_display,distance=..50,tag=kf.PowerBank,tag=!kf.Inactive,limit=1,sort=nearest] run function kf:blocks/powerbank/power
 
 # Fill cauldrons to nearby sprinklers
-execute as @e[type=block_display,tag=kf.Sprinkler,distance=..10] at @s run fill ~ ~1 ~ ~ ~1 ~ water_cauldron[level=2] replace cauldron
+execute as @e[type=block_display,tag=kf.Sprinkler,distance=..10,tag=!kf.noWaterRefill] at @s run fill ~ ~1 ~ ~ ~1 ~ water_cauldron[level=2] replace cauldron
 
 # Visuals
     #> Particles

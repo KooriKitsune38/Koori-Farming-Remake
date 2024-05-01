@@ -13,6 +13,11 @@ fill ~-3 ~-2 ~-3 ~3 ~-3 ~3 farmland[moisture=7] replace farmland
 # Retrieve nearby sprinklers
 execute store result score .nearbySprinklers kf.WateringTimer if entity @e[type=block_display,tag=kf.Sprinkler,tag=kf.Active,distance=..6.5]
 execute if score .nearbySprinklers kf.WateringTimer matches 3.. run scoreboard players operation .nearbySprinklers kf.WateringTimer *= .timerMultiplier kf.WateringTimer
+    #> Two sprinkler
+    tag @s remove kf.noWaterRefill
+    execute if score .nearbySprinklers kf.WateringTimer matches 2 run function kf:blocks/sprinkler/active/double_sprinkler
+    #> Three or more sprinklers
+    execute if score .nearbySprinklers kf.WateringTimer matches 3.. run function kf:blocks/sprinkler/active/triple_sprinkler
 
 # Scoreboard
     #> Add to timer
@@ -28,7 +33,3 @@ execute if score .modulo kf.WateringTimer matches 0 unless score .nearbySprinkle
 # Particles
     #> Ambient
     particle falling_water ^ ^ ^1 .1 .2 .1 1 1 normal
-    #> Two sprinkler
-    execute if score .nearbySprinklers kf.WateringTimer matches 2 run particle bubble ~ ~ ~ .25 .25 .25 0 1 normal
-    #> Three or more sprinklers
-    execute if score .nearbySprinklers kf.WateringTimer matches 3.. run particle smoke ~ ~1 ~ .5 .5 .5 0 1 normal

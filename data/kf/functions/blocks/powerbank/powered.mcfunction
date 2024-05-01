@@ -8,10 +8,12 @@ execute store result score .tempUUID kf.PowerUUIDs store result score @s kf.Powe
 scoreboard players reset .poweredEntities kf.Power
     ## No Tier
         #> Give Power
-        execute as @e[tag=kf.RequiresPower,tag=!kf.Powered,distance=..30] run function kf:blocks/powerbank/power_entities
+        execute as @e[tag=kf.RequiresPower,tag=!kf.Powered,distance=..30] at @s run function kf:blocks/powerbank/power_entities
         #> Remove Power
         scoreboard players reset .powerExpense kf.Power
+        tag @s add .temp
         execute as @e[tag=kf.Powered,distance=..30] if score @s kf.PowerUUIDs = .tempUUID kf.PowerUUIDs run function kf:blocks/powerbank/power_usage
+        tag @s remove .temp
         scoreboard players operation @s kf.Power -= .powerExpense kf.Power
 
 # Name

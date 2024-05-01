@@ -10,3 +10,7 @@ scoreboard players add .poweredEntities kf.Power 1
     execute if entity @s[tag=kf.MediumUsage] run scoreboard players add .powerExpense kf.Power 50
     #> High
     execute if entity @s[tag=kf.HighUsage] run scoreboard players add .powerExpense kf.Power 100
+
+# Raycast
+scoreboard players set .rayType kf.ReceivingPower 2
+execute at @s as @e[type=item_display,tag=kf.PowerBank,tag=.temp,limit=1] run function kf:blocks/powerbank/debug/pre_ray
