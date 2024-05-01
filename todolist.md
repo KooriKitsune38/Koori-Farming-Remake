@@ -37,3 +37,4 @@
 - Power banks are infinite if 2 nearby
 - players:[{id:#,homePos:{},coopIslands:[{id:#,homePos:{}}]}]
 - If player is in another island without id, tp spawn
+- ADD WINGS (limited)
