@@ -8,12 +8,13 @@ execute store result score .tempUUID kf.PowerUUIDs store result score @s kf.Powe
 scoreboard players reset .poweredEntities kf.Power
     ## No Tier
         #> Give Power
-        execute as @e[tag=kf.RequiresPower,tag=!kf.Powered,distance=..50] run function kf:blocks/powerbank/power_entities
+        execute as @e[tag=kf.RequiresPower,tag=!kf.Powered,distance=..30] run function kf:blocks/powerbank/power_entities
         #> Remove Power
         scoreboard players reset .powerExpense kf.Power
-        execute as @e[tag=kf.Powered,distance=..50] if score @s kf.PowerUUIDs = .tempUUID kf.PowerUUIDs run function kf:blocks/powerbank/power_usage
+        execute as @e[tag=kf.Powered,distance=..30] if score @s kf.PowerUUIDs = .tempUUID kf.PowerUUIDs run function kf:blocks/powerbank/power_usage
         scoreboard players operation @s kf.Power -= .powerExpense kf.Power
 
 # Name
 execute if score .poweredEntities kf.Power matches 1.. run data modify entity @s CustomName set value '{"text":"Active","color":"green"}'
-execute unless score .poweredEntities kf.Power matches 1.. run data modify entity @s CustomName set value '{"text":"Inactive","color":"aqua"}'
+tag @s remove kf.Inactive
+execute unless score .poweredEntities kf.Power matches 1.. run function kf:blocks/powerbank/set_inactive_state
