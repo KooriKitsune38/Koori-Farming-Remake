@@ -18,9 +18,10 @@ execute if score @s kf.Power matches 3000.. run scoreboard players set @s kf.Pow
     execute if block ~ ~1 ~ lever[powered=false] run function kf:blocks/powerbank/inactive
     execute if score @s kf.Power matches ..0 run function kf:blocks/powerbank/inactive
 
-
 # Display Power to nearby
 execute if entity @p[distance=..1.5] run function kf:blocks/powerbank/display_power
+
+scoreboard players reset @s kf.PowerUsage
 
 # Reset Receiving Power
 scoreboard players reset @s kf.ReceivingPower

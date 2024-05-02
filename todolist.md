@@ -1,4 +1,5 @@
 # Important
+- Speed up harvester
 - add rotating functions with block and fishing rod
 - make the spawner check if it's inside a block, to spawn 1 block up
 - Crystalizer Deepslate, blacstone, Amethyst, Lapis, quartz

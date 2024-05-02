@@ -8,7 +8,6 @@
     #> Slime (Harvester)
     execute as @e[type=slime,tag=kf.Harvester] at @s run function kf:entities/harvester/_main
     #> RequiresPower Entities
-    scoreboard players reset .powerExpense kf.Power
     execute as @e[tag=kf.RequiresPower] at @s run function kf:selectors/power_entities
     #> Item Display
     execute as @e[type=item_display] at @s run function kf:selectors/item_display
