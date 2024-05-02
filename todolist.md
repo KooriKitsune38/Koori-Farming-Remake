@@ -1,32 +1,29 @@
-- add automatic tilling to bot (by naming it with a special name tag, which will give the tag)
-- Sprinkles can be upgraded by throwing an item on the cauldron
-- add area tilling
-- add area harvest
-- add speed to bot
+# Important
 - add rotating functions with block and fishing rod
 - make the spawner check if it's inside a block, to spawn 1 block up
-- automatic fishing (use random timer, and a net)
-- automatic butcher
-- automatic mushrooms
-- set the slime to invulnerable and check if it's being hit by the owner
-- Collector range tiers
-- Filtered Collectors
-- Cosmetics
-- Something about flowers
-- Feeding fishes
-- Bread into wheat and other stuff
-- Random tips
-- If bonemeal in cauldron, increase chances of growth
-- Ironman mode runescape hypixel
-- CustomModelData
-- Daily quests
-- Dungeons
 - Crystalizer Deepslate, blacstone, Amethyst, Lapis, quartz
-- Parkour Area
-- Gadgets like grappling hook
-- Trading hall
+- add area tilling
+- add area harvest
+# Commands
 - Kick Command
-- Kick players from island (players must have id to tp)
-- ADD WINGS (limited)
 - Visit system /set_visit /visit with list and retrieves the thing
-- only power the nearest one, afterwards check if it's inactive, then unpower. Also if the power expense is more than received power, cap entities
+# Gadgets
+- CustomModelData
+- Cosmetics
+- Gadgets like grappling hook, wings, a "mine blocks minigame" for islands
+- ADD WINGS (limited)
+# Facultative
+- Daily quests
+- add automatic tilling to bot (by naming it with a special name tag, which will give the tag)
+- Sprinkles can be upgraded by throwing an item on the cauldron
+- add speed to bot
+- Automatic fishing (use random timer, and a net)
+- Automatic butcher
+- Automatic mushrooms
+- Automatic Tree chop
+- Filtered Collectors
+- Feeding fishes
+- If bonemeal in cauldron, increase chances of growth
+# World Related
+- Parkour Area
+- Trading hall
