@@ -1,4 +1,5 @@
 #> kf:blocks/powerbank/set_inactive_state
+
 # Add tag
 tag @s add kf.Inactive
 

@@ -29,3 +29,4 @@
 - Kick players from island (players must have id to tp)
 - ADD WINGS (limited)
 - Visit system /set_visit /visit with list and retrieves the thing
+- only power the nearest one, afterwards check if it's inactive, then unpower. Also if the power expense is more than received power, cap entities

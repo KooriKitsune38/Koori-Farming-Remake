@@ -1,14 +1,6 @@
 #> kf:blocks/powerbank/inactive
 
 # Name
-tag @s remove kf.Inactive
+execute if block ~ ~1 ~ lever[powered=false] run function kf:blocks/powerbank/set_inactive_state
 execute if score @s kf.Power matches 1.. run function kf:blocks/powerbank/set_inactive_state
 execute if score @s kf.Power matches ..0 run data modify entity @s CustomName set value '{"text":"No Power","color":"red"}'
-
-# Tell people
-#title @a[distance=..1.5] actionbar [{"text": "No Power!","color":"red"}]
-
-# Give power
-execute store result score .tempUUID kf.PowerUUIDs run data get entity @s UUID[0]
-    #> No Tier
-    execute as @e[tag=kf.Powered,distance=..50] if score @s kf.PowerUUIDs = .tempUUID kf.PowerUUIDs run function kf:blocks/powerbank/unpower_entities

@@ -3,20 +3,8 @@
 # Particle
 particle wax_off ~ ~-0.3 ~ .5 .5 .5 1 1 normal
 
-# Manage Power
-execute store result score .tempUUID kf.PowerUUIDs store result score @s kf.PowerUUIDs run data get entity @s UUID[0]
-scoreboard players reset .poweredEntities kf.Power
-    ## No Tier
-        #> Give Power
-        execute as @e[tag=kf.RequiresPower,tag=!kf.Powered,distance=..30] at @s run function kf:blocks/powerbank/power_entities
-        #> Remove Power
-        scoreboard players reset .powerExpense kf.Power
-        tag @s add .temp
-        execute as @e[tag=kf.Powered,distance=..30] if score @s kf.PowerUUIDs = .tempUUID kf.PowerUUIDs run function kf:blocks/powerbank/power_usage
-        tag @s remove .temp
-        scoreboard players operation @s kf.Power -= .powerExpense kf.Power
+# Remove Power
+scoreboard players operation @s kf.Power -= @s kf.PowerUsage
 
 # Name
-execute if score .poweredEntities kf.Power matches 1.. run data modify entity @s CustomName set value '{"text":"Active","color":"green"}'
-tag @s remove kf.Inactive
-execute unless score .poweredEntities kf.Power matches 1.. run function kf:blocks/powerbank/set_inactive_state
+data modify entity @s CustomName set value '{"text":"Active","color":"green"}'
