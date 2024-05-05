@@ -1,10 +1,10 @@
 # Important
-- Speed up harvester
 - add rotating functions with block and fishing rod
 - make the spawner check if it's inside a block, to spawn 1 block up
-- Crystalizer Deepslate, blacstone, Amethyst, Lapis, quartz
 - add area tilling
 - add area harvest
+- Add no farmland destroying boots
+- Add builds presets that can be purchased
 # Commands
 - Kick Command
 - Visit system /set_visit /visit with list and retrieves the thing

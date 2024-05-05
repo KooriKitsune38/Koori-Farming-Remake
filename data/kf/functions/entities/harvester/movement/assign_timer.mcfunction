@@ -2,4 +2,4 @@
 
 # Parse tiers
     #> No tier
-    scoreboard players set @s kf.HarvesterMovement 80
+    scoreboard players set @s kf.HarvesterMovement 60
