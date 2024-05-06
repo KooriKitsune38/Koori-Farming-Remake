@@ -1,10 +1,7 @@
 # Important
+- Cystalizer amethyst with silk touch
 - add rotating functions with block and fishing rod
-- make the spawner check if it's inside a block, to spawn 1 block up
-- add area tilling
-- add area harvest
 - Add no farmland destroying boots
-- Add builds presets that can be purchased
 # Commands
 - Kick Command
 - Visit system /set_visit /visit with list and retrieves the thing
@@ -14,6 +11,9 @@
 - Gadgets like grappling hook, wings, a "mine blocks minigame" for islands
 - ADD WINGS (limited)
 # Facultative
+- Add builds presets that can be purchased
+- add area tilling
+- add area harvest
 - Daily quests
 - add automatic tilling to bot (by naming it with a special name tag, which will give the tag)
 - Sprinkles can be upgraded by throwing an item on the cauldron
