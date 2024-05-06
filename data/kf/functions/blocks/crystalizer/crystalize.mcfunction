@@ -9,7 +9,6 @@
 
 # Check surroundings for iron
 scoreboard players reset .success k.Values
-execute if score .success k.Values matches 1
 execute store result score .coalBlocks kf.Crystalization run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 void_air replace coal_block
 fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 coal_block replace void_air
 execute store result score .ironBlocks kf.Crystalization run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 void_air replace iron_block

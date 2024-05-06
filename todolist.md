@@ -1,5 +1,4 @@
 # Important
-- Cystalizer amethyst with silk touch
 - add rotating functions with block and fishing rod
 - Add no farmland destroying boots
 # Commands
