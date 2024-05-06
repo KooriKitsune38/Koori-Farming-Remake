@@ -1,0 +1,14 @@
+{
+    "type":"empty",
+    "pools":[
+        {
+            "rolls":1,
+            "entries": [
+                {
+                    "type":"item",
+                    "name": "minecraft:budding_amethyst"
+                }
+            ]
+        }
+    ]
+}

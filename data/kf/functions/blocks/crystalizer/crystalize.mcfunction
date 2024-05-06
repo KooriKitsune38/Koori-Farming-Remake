@@ -7,12 +7,6 @@
     #> Sound
     playsound minecraft:entity.armor_stand.break block @a ~ ~ ~ 2 0.8
 
-# Generate
-place template kf:geode ~-1 ~ ~-1
-
-# Set ores
-function kf:blocks/crystalizer/place_ores
-
 # Check surroundings for iron
 scoreboard players reset .success k.Values
 execute if score .success k.Values matches 1
@@ -28,6 +22,12 @@ execute if score .coalBlocks kf.Crystalization matches 8 run scoreboard players 
 execute if score .ironBlocks kf.Crystalization matches 8 run scoreboard players set .success k.Values 1
 execute if score .goldBlocks kf.Crystalization matches 8 run scoreboard players set .success k.Values 1
 execute if score .diamondBlocks kf.Crystalization matches 8 run scoreboard players set .success k.Values 1
+
+# Generate
+place template kf:geode ~-1 ~ ~-1
+
+# Set ores
+function kf:blocks/crystalizer/place_ores
 execute if score .success k.Values matches 1 run function kf:blocks/crystalizer/offset_tier
 
 scoreboard players set .success k.Values 1
