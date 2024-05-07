@@ -27,3 +27,4 @@
 # World Related
 - Parkour Area
 - Trading hall
+- Slime and Nether area for period of time, costs money
