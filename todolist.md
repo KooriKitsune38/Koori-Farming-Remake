@@ -1,4 +1,5 @@
 # Important
+- Add templates to shops
 - add rotating functions with block and fishing rod
 - Add no farmland destroying boots
 # Commands
@@ -7,7 +8,7 @@
 # Gadgets
 - CustomModelData
 - Cosmetics
-- Gadgets like grappling hook, wings, a "mine blocks minigame" for islands
+- Gadgets like grappling hook, wings, a "mine bloincks minigame" for islands
 - ADD WINGS (limited)
 # Facultative
 - Add builds presets that can be purchased

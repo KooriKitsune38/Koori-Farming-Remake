@@ -8,6 +8,7 @@ kill @s
 kill @e[type=item,nbt={Item:{id:"minecraft:oak_fence",Count:1b}},distance=..2,limit=1]
 
 # Remove fence
+execute if block ~ ~ ~ oak_fence[waterlogged=true] run setblock ~ ~ ~ water
 fill ~ ~ ~ ~ ~ ~ air replace oak_fence
 
 # Particle
