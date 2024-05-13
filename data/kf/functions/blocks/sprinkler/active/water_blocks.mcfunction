@@ -11,7 +11,7 @@ fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 farmland[moisture=7] replace farmland
 fill ~-3 ~-2 ~-3 ~3 ~-3 ~3 farmland[moisture=7] replace farmland
 
 # Retrieve nearby sprinklers
-execute store result score .nearbySprinklers kf.WateringTimer if entity @e[type=block_display,tag=kf.Sprinkler,tag=kf.Active,distance=..6.5]
+execute positioned ~-3 ~-3 ~-3 store result score .nearbySprinklers kf.WateringTimer if entity @e[type=block_display,tag=kf.Sprinkler,tag=kf.Active,dx=7,dz=7,dy=3]
 execute if score .nearbySprinklers kf.WateringTimer matches 3.. run scoreboard players operation .nearbySprinklers kf.WateringTimer *= .timerMultiplier kf.WateringTimer
     #> Two sprinkler
     tag @s remove kf.noWaterRefill
