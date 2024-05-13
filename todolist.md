@@ -1,6 +1,4 @@
 # Important
-- Add templates to shops
-- add rotating functions with block and fishing rod
 - Add no farmland destroying boots
 # Commands
 - Kick Command
