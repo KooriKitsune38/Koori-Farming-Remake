@@ -1,6 +1,9 @@
 {
     "values": [
         "farmland",
+        "dirt_path",
+        "coarse_dirt",
+        "rooted_dirt",
         "dirt",
         "grass_block",
         "magenta_glazed_terracotta"
