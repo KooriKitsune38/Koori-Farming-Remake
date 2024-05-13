@@ -2,6 +2,7 @@
     "values": [
         "farmland",
         "dirt",
-        "grass_block"
+        "grass_block",
+        "magenta_glazed_terracotta"
     ]
 }

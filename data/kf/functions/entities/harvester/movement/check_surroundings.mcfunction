@@ -3,6 +3,9 @@
 # Reset success
 scoreboard players reset .success k.Values
 
+# Rotation Blocks
+execute if block ~ ~-1 ~ magenta_glazed_terracotta run function kf:entities/harvester/movement/rotate_harvester
+
 # Check blocks
     #> Check if it's not blocked
     execute store success score .blocked kf.HarvesterMovement unless block ^ ^ ^1 #kf:bot_passable

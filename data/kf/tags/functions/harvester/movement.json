@@ -1,6 +1,6 @@
 {
     "values": [
-        "kf:entities/harvester/movement/check_surroundings",
+        "kf:entities/harvester/movement/check_rotation",
         "kf:entities/harvester/movement/reset_timer"
     ]
 }

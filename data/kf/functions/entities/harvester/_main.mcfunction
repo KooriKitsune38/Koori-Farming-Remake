@@ -1,5 +1,9 @@
 #> kf:entities/harvester/_main
 
+# Rotate
+execute if entity @s[tag=kf.HasBobber] unless entity @e[type=fishing_bobber,distance=...5] run function kf:entities/harvester/_rotate
+execute if entity @e[type=fishing_bobber,distance=...5] run tag @s add kf.HasBobber
+
 # Movement
     #> Timer
     function kf:entities/harvester/movement/timer
