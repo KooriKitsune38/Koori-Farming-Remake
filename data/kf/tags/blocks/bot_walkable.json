@@ -1,6 +1,7 @@
 {
     "values": [
         "farmland",
-        "dirt"
+        "dirt",
+        "grass_block"
     ]
 }
