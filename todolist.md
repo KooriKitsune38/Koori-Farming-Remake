@@ -27,3 +27,8 @@
 - Parkour Area
 - Trading hall
 - Slime and Nether area for period of time, costs money
+
+
+
+- flying cars
+- loot boxes drops
