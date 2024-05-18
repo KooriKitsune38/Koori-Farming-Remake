@@ -6,6 +6,10 @@
         "air",
         "void_air",
         "cave_air",
-        "sweet_berry_bush"
+        "sweet_berry_bush",
+        "#wool_carpets",
+        "#pressure_plates",
+        "#buttons",
+        "#rails"
     ]
 }
