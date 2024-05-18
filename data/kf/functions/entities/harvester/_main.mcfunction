@@ -1,7 +1,7 @@
 #> kf:entities/harvester/_main
 
 # Player
-ride @p[distance=..1,nbt=!{FallDistance:0f},predicate=!kf:sneaking] mount @s
+ride @p[dx=0,nbt=!{FallDistance:0f},predicate=!kf:sneaking] mount @s[tag=!kf.NotRideable]
 
 # Rotate
 execute if entity @s[tag=kf.HasBobber] unless entity @e[type=fishing_bobber,distance=...5] run function kf:entities/harvester/_rotate

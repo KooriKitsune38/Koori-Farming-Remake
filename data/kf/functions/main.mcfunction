@@ -1,5 +1,8 @@
 #> kf:main
 
+# Humidity
+function kf:humidity/humidity
+
 # Selectors
     #> Markers
     execute as @e[type=marker] at @s run function kf:selectors/marker
