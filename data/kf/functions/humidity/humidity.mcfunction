@@ -1,5 +1,8 @@
 #> kf:humidity
 
+# Set players
+bossbar set k.humidity players @a
+
 # Bossbar
     #> Setting value
     execute store result bossbar k.humidity value run scoreboard players get .humidity k.Humidity
