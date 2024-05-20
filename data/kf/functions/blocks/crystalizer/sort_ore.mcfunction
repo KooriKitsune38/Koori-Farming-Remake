@@ -2,7 +2,7 @@
 
 # Spawn ore
     #> Normal blocks
-    execute unless score .success k.Values matches 1 run loot spawn ~ ~ ~ loot kf:rare_ores
+    execute unless score .success k.Values matches 1 run loot spawn ~ ~ ~ loot kf:normal_ore
     #> Higher blocks
     execute unless score .diamondBlocks kf.Crystalization matches 8 if score .success k.Values matches 1 run loot spawn ~ ~ ~ loot kf:uncommon_ores
     execute if score .diamondBlocks kf.Crystalization matches 8 run loot spawn ~ ~ ~ loot kf:rare_ores

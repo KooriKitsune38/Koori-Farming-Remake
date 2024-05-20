@@ -45,13 +45,13 @@
           },
           {
             "type": "minecraft:item",
-            "name": "minecraft:budding_amethyst",
-            "weight": 8
+            "name": "minecraft:diamond_ore",
+            "weight": 5
           },
           {
             "type": "minecraft:item",
-            "name": "minecraft:diamond_ore",
-            "weight": 5
+            "name": "minecraft:budding_amethyst",
+            "weight": 3
           },
           {
             "type": "minecraft:item",
