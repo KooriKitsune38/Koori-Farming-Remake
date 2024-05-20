@@ -1,0 +1,22 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "tag":"kf:bot_passable"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "offsetY": -1,
+            "predicate": {
+                "block": {
+                    "tag": "kf:bot_walkable"
+                }
+            }
+        }
+    ]
+}
