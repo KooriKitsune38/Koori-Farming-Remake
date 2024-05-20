@@ -4,8 +4,12 @@
 function kf:humidity/humidity
 
 # Selectors
-    #> Markers
-    execute as @e[type=marker] at @s run function kf:selectors/marker
+    #> Harvester Placer
+    execute as @e[type=marker,tag=kf.Harvester,tag=.temp] at @s align xyz run function kf:entities/harvester/_summon
+    #> Collector
+    execute as @e[type=marker,tag=kf.Collector] at @s run function kf:blocks/collector/_main 
+    #> Crystalizer
+    execute as @e[type=marker,tag=kf.Crystalizer] at @s run function kf:blocks/crystalizer/_main
     #> Sprinkler
     execute as @e[type=block_display,tag=kf.Sprinkler] at @s run function kf:blocks/sprinkler/_main
     #> Harvester Display

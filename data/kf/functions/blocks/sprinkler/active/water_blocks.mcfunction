@@ -6,18 +6,9 @@ tag @s add kf.Active
 # Rotate
 tp @s ~ ~ ~ ~5 ~
 
-# Fill farmland
-fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 farmland[moisture=7] replace farmland
-fill ~-3 ~-2 ~-3 ~3 ~-3 ~3 farmland[moisture=7] replace farmland
-
 # Retrieve nearby sprinklers
 execute positioned ~-3 ~-3 ~-3 store result score .nearbySprinklers kf.WateringTimer if entity @e[type=block_display,tag=kf.Sprinkler,tag=kf.Active,dx=7,dz=7,dy=3]
-execute if score .nearbySprinklers kf.WateringTimer matches 3.. run scoreboard players operation .nearbySprinklers kf.WateringTimer *= .timerMultiplier kf.WateringTimer
-    #> Two sprinkler
-    tag @s remove kf.noWaterRefill
-    execute if score .nearbySprinklers kf.WateringTimer matches 2 run function kf:blocks/sprinkler/active/double_sprinkler
-    #> Three or more sprinklers
-    execute if score .nearbySprinklers kf.WateringTimer matches 3.. run function kf:blocks/sprinkler/active/triple_sprinkler
+execute if score .nearbySprinklers kf.WateringTimer matches 1.. run function kf:blocks/sprinkler/active/check_sprinklers
 
 # Scoreboard
     #> Add to timer

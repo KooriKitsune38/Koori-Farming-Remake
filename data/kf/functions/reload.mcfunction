@@ -15,6 +15,7 @@
     scoreboard players set .timerMultiplier kf.WateringTimer 10
 
 # Schedules
+schedule function kf:blocks/sprinkler/active/irrigation 1t replace
 schedule function kf:humidity/humidity_schedule 1t replace
 schedule function kf:blocks/watermill/adjust_schedule 1t replace
 schedule function kf:entities/villagers/_schedule 1t replace
