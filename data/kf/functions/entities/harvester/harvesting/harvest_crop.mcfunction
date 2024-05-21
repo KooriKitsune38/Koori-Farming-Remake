@@ -8,6 +8,6 @@ function kf:entities/harvester/harvesting/replant
 
 # Visuals
     #> Particles
-    particle block grass ~ ~ ~ .5 .5 .5 1 10
+    particle block tall_grass ~ ~ ~ .5 .5 .5 1 10
     #> Sounds
     playsound block.crop.break block @a ~ ~ ~
