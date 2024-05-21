@@ -1,0 +1,29 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt":"{Tags:[kf.Powered]}"
+                }
+            }
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "location_check",
+                "offsetY": 1,
+                "predicate": {
+                    "block":{
+                        "blocks": [
+                            "water_cauldron"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
