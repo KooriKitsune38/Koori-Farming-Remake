@@ -1,7 +1,7 @@
 #> kf:blocks/windmill/_remove
 
 # Drop Item
-summon item ~ ~ ~ {Item:{id:"minecraft:ghast_spawn_egg",Count:1b,tag:{display:{Name:'{"text":"Wind Mill","italic":false}'},EntityTag:{id:"block_display",Rotation:[0f,0f],Tags:[kf.WindMill,.temp],block_state:{Name:"cobweb"},teleport_duration:1,transformation:{translation:[-1f,-1f,-1f],left_rotation:[0f,0f,0f,1f],scale:[2f,2f,2f],right_rotation:[0f,0f,0f,1f]}}}}}
+summon item ~ ~ ~ {Item:{id:"minecraft:ghast_spawn_egg",Count:1b,tag:{display:{Name:'{"text":"Wind Mill","italic":false}'},EntityTag:{id:"block_display",Rotation:[0f,0f],Tags:[kf.WindMill],block_state:{Name:"cobweb"},teleport_duration:1,transformation:{translation:[-1f,-1f,-1f],left_rotation:[0f,0f,0f,1f],scale:[2f,2f,2f],right_rotation:[0f,0f,0f,1f]}}}}}
 
 # Kill
 kill @s

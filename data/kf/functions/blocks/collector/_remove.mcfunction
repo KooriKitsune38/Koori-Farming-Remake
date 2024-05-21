@@ -1,7 +1,7 @@
 #> kf:blocks/collector/_remove
 
 # Drop Item
-summon item ~ ~ ~ {Item:{id:"minecraft:llama_spawn_egg",Count:1b,tag:{display:{Name:'{"text":"Collector","italic":false}'},EntityTag:{id:"marker",Tags:[kf.Collector,.temp]}}}}
+summon item ~ ~ ~ {Item:{id:"minecraft:llama_spawn_egg",Count:1b,tag:{display:{Name:'{"text":"Collector","italic":false}'},EntityTag:{id:"marker",Tags:[kf.Collector]}}}}
 
 # Kill
 kill @s

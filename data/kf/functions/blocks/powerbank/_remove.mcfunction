@@ -1,7 +1,7 @@
 #> kf:blocks/powerbank/_remove
 
 # Drop Item
-summon item ~ ~ ~ {Item:{id:"minecraft:ghast_spawn_egg",Count:1b,tag:{display:{Name:'{"text":"Power Bank","italic":false}'},EntityTag:{id:"item_display",Rotation:[0f,0f],Tags:[kf.PowerBank,.temp]}}}}
+summon item ~ ~ ~ {Item:{id:"minecraft:ghast_spawn_egg",Count:1b,tag:{display:{Name:'{"text":"Power Bank","italic":false}'},EntityTag:{id:"item_display",Rotation:[0f,0f],Tags:[kf.PowerBank]}}}}
 
 # Kill
 kill @s
