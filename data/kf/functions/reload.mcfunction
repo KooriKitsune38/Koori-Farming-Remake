@@ -28,5 +28,7 @@
     #> Watermill
     schedule function kf:blocks/watermill/adjust_schedule 1t replace
     schedule function kf:blocks/watermill/refill_sprinklers 1t replace
+    #> Crystalizer
+    schedule function kf:blocks/crystalizer/schedule 60t replace
     #> Villagers Replace
     schedule function kf:entities/villagers/_schedule 1t replace

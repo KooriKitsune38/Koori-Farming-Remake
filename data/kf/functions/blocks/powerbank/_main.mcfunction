@@ -5,13 +5,6 @@ execute if entity @s[tag=!kf.Placed] align xyz positioned ~.5 ~.9 ~.5 if block ~
 
 tag @s remove kf.Inactive
 
-# Bank Entities
-    #> Generators
-    execute as @e[predicate=kf:power_generator,scores={kf.UsingBank=0},distance=..50] store success score @s kf.UsingBank run function kf:blocks/powerbank/retrieve_power
-    #> Machines
-    execute store success score .success k.Values if score @s kf.Power matches 1..
-    execute as @e[tag=kf.RequiresPower,scores={kf.UsingBank=0},distance=..50] store success score @s kf.UsingBank run function kf:blocks/powerbank/use_power
-
 # Receive Power
 scoreboard players operation @s kf.Power += @s kf.ReceivingPower
 

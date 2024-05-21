@@ -1,11 +1,8 @@
 #> kf:blocks/powerbank/retrieve_power
 
 # Sort Type
-    #> Windmill
-    execute if entity @s[tag=kf.WindMill] run scoreboard players add @e[distance=..0.00001,sort=nearest,limit=1,tag=kf.PowerBank] kf.ReceivingPower 100
-    #> Watermill
-    execute if entity @s[tag=kf.WaterMill,tag=kf.Active] run scoreboard players add @e[distance=..0.00001,sort=nearest,limit=1,tag=kf.PowerBank] kf.ReceivingPower 25
+scoreboard players operation @e[sort=nearest,limit=1,tag=kf.PowerBank,distance=..50] kf.ReceivingPower += .powerSupply kf.ReceivingPower
 
 # Raycast
 scoreboard players set .rayType kf.ReceivingPower 1
-execute facing ~ ~ ~ if entity @p[distance=..2.5] run function kf:blocks/powerbank/debug/pre_ray
+execute at @e[sort=nearest,limit=1,tag=kf.PowerBank,distance=..50] if entity @p[distance=..2.5] run function kf:blocks/powerbank/debug/pre_ray
