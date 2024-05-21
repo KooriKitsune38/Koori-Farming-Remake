@@ -7,7 +7,7 @@ setblock ~ ~ ~ oak_fence
 tp ~ ~ ~
 
 # Tag
-tag @s remove .temp
+tag @s add kf.Placed
 tag @s add .rotate
 
 # Playsound

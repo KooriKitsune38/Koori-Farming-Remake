@@ -1,0 +1,51 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+      {
+        "condition": "minecraft:any_of",
+        "terms": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "kf:block_crop"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:crops"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks":[
+                  "sweet_berry_bush"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "tag": "minecraft:crops",
+              "state": {
+                "age": "0"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+  

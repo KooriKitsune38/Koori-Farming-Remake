@@ -7,7 +7,7 @@ setblock ~ ~ ~ chiseled_stone_bricks
 tp ~ ~ ~
 
 # Tag remove
-tag @s remove .temp
+tag @s add kf.Placed
 
 # Playsound
 playsound block.stone.place block @a ~ ~ ~ 

@@ -7,7 +7,7 @@ setblock ~ ~ ~ barrel[facing=up]{CustomName:'{"text":"Harvest Collector"}'}
 tp ~ ~ ~
 
 # Tag remove
-tag @s remove .temp
+tag @s add kf.Placed
 
 # Playsound
 playsound block.wood.place block @a ~ ~ ~ 

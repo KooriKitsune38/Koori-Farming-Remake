@@ -1,24 +1,25 @@
 {
-    "condition": "any_of",
+    "condition": "minecraft:all_of",
     "terms": [
-        {
-            "condition": "location_check",
-            "offsetY": 1,
-            "predicate": {
-                "block": {
-                    "tag":"kf:sprinkler"
-                }
-            }
-        },
-        {
-            "condition": "location_check",
-            "predicate": {
-                "block": {
-                    "blocks": [
-                        "air"
-                    ]
-                }
-            }
+      {
+        "condition": "minecraft:location_check",
+        "offsetY": 1,
+        "predicate": {
+          "block": {
+            "tag": "kf:sprinkler"
+          }
         }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "block": {
+            "blocks": [
+              "minecraft:air"
+            ]
+          }
+        }
+      }
     ]
-}
+  }
+  

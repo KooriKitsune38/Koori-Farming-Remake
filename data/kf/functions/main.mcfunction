@@ -5,7 +5,7 @@ function kf:humidity/humidity
 
 # Selectors
     #> Harvester Placer
-    execute as @e[type=marker,tag=kf.Harvester,tag=.temp] at @s align xyz run function kf:entities/harvester/_summon
+    execute as @e[type=marker,tag=kf.Harvester] at @s align xyz run function kf:entities/harvester/_summon
     #> Collector
     execute as @e[type=marker,tag=kf.Collector] at @s run function kf:blocks/collector/_main 
     #> Crystalizer
