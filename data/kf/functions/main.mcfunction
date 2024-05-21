@@ -21,6 +21,7 @@ function kf:humidity/humidity
     #> Slime (Harvester)
     execute as @e[type=slime,tag=kf.Harvester] at @s run function kf:entities/harvester/_main
     #> Powered Entities
+    scoreboard players reset .powerExpense kf.PowerUsage
     execute as @e[tag=kf.RequiresPower] at @s run function kf:power_entities
     #> kf.PowerBank
     scoreboard players set @e[predicate=kf:powerbank_entity] kf.UsingBank 0
