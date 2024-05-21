@@ -3,10 +3,6 @@
 # If tag temp, place
 execute if entity @s[tag=.temp] align xyz positioned ~.5 ~.5 ~.5 unless entity @e[type=block_display,tag=kf.WaterMill,distance=..1] if block ~ ~ ~ #kf:block_placeable run function kf:blocks/windmill/_place
 
-# Nearest Bank
-scoreboard players set .powerSupply kf.ReceivingPower 50
-execute as @e[type=item_display,distance=..50,tag=kf.PowerBank,limit=1,sort=nearest] run function kf:blocks/powerbank/power
-
 # Rotate
 execute at @s run tp @s ~ ~ ~ ~-10 ~
 

@@ -9,6 +9,7 @@ execute if entity @s[tag=.temp] align xyz positioned ~.5 ~.5 ~.5 if block ~ ~ ~ 
 # Rotation
 scoreboard players reset .success k.Values
 execute rotated ~90 ~ positioned ~ ~-1 ~ if block ~ ~ ~ water run function kf:blocks/watermill/check_sides
+tag @s remove kf.Active
 execute if score .success k.Values matches 1 run function kf:blocks/watermill/active
 
 # If no oak fence, kill

@@ -8,6 +8,7 @@
     scoreboard objectives add kf.Power dummy
     scoreboard objectives add kf.ReceivingPower dummy
     scoreboard objectives add kf.PowerUsage dummy
+    scoreboard objectives add kf.UsingBank dummy
     scoreboard objectives add kf.PowerUUIDs dummy
     scoreboard objectives add kf.Crystalization dummy
     #> Players

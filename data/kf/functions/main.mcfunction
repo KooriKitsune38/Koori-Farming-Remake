@@ -20,9 +20,8 @@ function kf:humidity/humidity
     execute as @e[type=block_display,tag=kf.WindMill] at @s run function kf:blocks/windmill/_main
     #> Slime (Harvester)
     execute as @e[type=slime,tag=kf.Harvester] at @s run function kf:entities/harvester/_main
-    #> RequiresPower Entities
-    execute as @e[tag=kf.RequiresPower] at @s run function kf:selectors/power_entities
     #> kf.PowerBank
+    scoreboard players set @e[predicate=kf:powerbank_entity] kf.UsingBank 0
     execute as @e[type=item_display,tag=kf.PowerBank] at @s run function kf:blocks/powerbank/_main
     #> Villagers
     execute as @e[type=villager,tag=kf.trader] at @s run function kf:entities/villagers/_main
