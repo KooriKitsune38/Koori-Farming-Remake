@@ -12,4 +12,4 @@ scoreboard players set .powerSupply kf.ReceivingPower 100
 function kf:blocks/powerbank/retrieve_power
 
 # Rotate
-execute at @s run tp @s ~ ~ ~ ~-10 ~
+#execute at @s run tp @s ~ ~ ~ ~-10 ~

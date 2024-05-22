@@ -8,7 +8,7 @@
 tp ~ ~ ~
 
 # Place block
-setblock ~ ~ ~ detector_rail
+fill ~ ~ ~ ~ ~ ~ detector_rail replace air
 
 # Sound
 playsound block.scaffolding.place block @a ~ ~ ~ 1 2

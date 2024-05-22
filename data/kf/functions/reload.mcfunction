@@ -31,6 +31,8 @@ data merge storage kf:trading {prices:{"minecraft:wheat":6,"minecraft:beetroot":
     #> Watermill
     schedule function kf:blocks/watermill/adjust_schedule 1t replace
     schedule function kf:blocks/watermill/refill_sprinklers 1t replace
+    #> Windmill
+    schedule function kf:blocks/mill_rotation 15t replace
     #> Crystalizer
     schedule function kf:blocks/crystalizer/schedule 300s replace
     #> Villagers Replace

@@ -4,7 +4,7 @@
 tag @s add kf.Active
 
 # Rotate
-execute at @s run function kf:blocks/watermill/rotate
+#execute at @s run function kf:blocks/watermill/rotate
 
 # Power
 scoreboard players set .powerSupply kf.ReceivingPower 50
