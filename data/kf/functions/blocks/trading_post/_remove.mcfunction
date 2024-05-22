@@ -5,14 +5,14 @@ summon item ~ ~ ~ {Item:{id:"minecraft:ocelot_spawn_egg",Count:1b,tag:{display:{
 
 # Kill
 kill @s
-kill @e[type=item,nbt={Item:{id:"minecraft:powered_rail",Count:1b}},distance=..2,limit=1]
+kill @e[type=item,nbt={Item:{id:"minecraft:detector_rail",Count:1b}},distance=..2,limit=1]
 
 # Remove fence
-execute if block ~ ~ ~ powered_rail[waterlogged=true] run setblock ~ ~ ~ water
-fill ~ ~ ~ ~ ~ ~ air replace powered_rail
+execute if block ~ ~ ~ detector_rail[waterlogged=true] run setblock ~ ~ ~ water
+fill ~ ~ ~ ~ ~ ~ air replace detector_rail
 
 # Particle
-particle block powered_rail ~ ~ ~ .1 .1 .1 1 5 normal
+particle block detector_rail ~ ~ ~ .1 .1 .1 1 5 normal
 
 # Sound
 playsound block.anvil.break block @a ~ ~ ~ 1 2
