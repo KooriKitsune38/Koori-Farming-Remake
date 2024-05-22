@@ -20,6 +20,8 @@ function kf:humidity/humidity
     execute as @e[type=block_display,tag=kf.WindMill] at @s run function kf:blocks/windmill/_main
     #> Slime (Harvester)
     execute as @e[type=slime,tag=kf.Harvester] at @s run function kf:entities/harvester/_main
+    #> Trading Post
+    execute as @e[type=block_display,tag=kf.TradingPost] at @s run function kf:blocks/trading_post/_main
     #> Powered Entities
     scoreboard players reset .powerExpense kf.PowerUsage
     execute as @e[tag=kf.RequiresPower] at @s run function kf:power_entities

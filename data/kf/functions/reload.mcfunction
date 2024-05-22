@@ -15,6 +15,9 @@
     scoreboard players set .bonemealInterval kf.WateringTimer 200
     scoreboard players set .timerMultiplier kf.WateringTimer 10
 
+# Storage
+data merge storage kf:trading {prices:{"minecraft:wheat":6,"minecraft:beetroot":8,"minecraft:carrot":12,"minecraft:potato":12,"minecraft:sweet_berries":45,"minecraft:sugar_cane":35,"minecraft:cactus":35}}
+
 # Schedules
     #> Harvester
     schedule function kf:entities/harvester/movement/schedule 1t replace

@@ -20,3 +20,6 @@ give @s ghast_spawn_egg{display:{Name:'{"text":"Wind Mill","italic":false}'},Ent
 
 # Crystalizer
 give @s skeleton_spawn_egg{display:{Name:'{"text":"Crystalizer","italic":false}'},EntityTag:{id:"marker",Rotation:[0f,0f],Tags:[kf.Crystalizer,kf.RequiresPower,kf.HighUsage]}}
+
+# Trading Post
+give @s ocelot_spawn_egg{display:{Name:'{"text":"Trading Post","italic":false}'},EntityTag:{id:"block_display",Rotation:[0f,0f],Tags:[kf.RequiresPower,kf.TradingPost,kf.LowUsage],block_state:{Name:"scaffolding"},start_interpolation:-1,transformation:{left_rotation:[0.0f,0.0f,1.0f,0.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,0.503f,1.0f],translation:[0.5f,0.01f,-0.5f]}}}
