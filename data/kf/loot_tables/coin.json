@@ -11,27 +11,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{k.Coin:1b}"
-              },
-              {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                  {
-                    "text": "Fancy Coin!",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ]
-              },
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "name": {
-                  "text": "Coin",
-                  "color": "gold",
-                  "italic": false
-                }
+                "tag": "{display: {Name: '{\"text\":\"Coin\",\"color\":\"gold\",\"italic\":false}', Lore: ['{\"text\":\"Fancy Coin!\",\"color\":\"gray\",\"italic\":false}']}, k.Coin: 1b}"
               },
               {
                 "function": "minecraft:set_count",
