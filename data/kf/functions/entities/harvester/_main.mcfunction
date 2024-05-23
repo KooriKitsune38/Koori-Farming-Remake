@@ -11,4 +11,5 @@ execute if entity @e[type=fishing_bobber,distance=...5] run tag @s add kf.HasBob
     #> Return the collector, if tier list
     function kf:entities/harvester/harvesting/_tiers
     #> If success, then harvest
-    execute if score .success k.Values matches 1 if entity @s[tag=kf.Powered] if predicate kf:bot_can_harvest run function kf:entities/harvester/harvesting/check_crop
+    execute if score .success k.Values matches 1 if entity @s[tag=kf.Powered] run function kf:entities/harvester/harvesting/check_crop
+    #execute if score .success k.Values matches 1 if entity @s[tag=kf.Powered] if predicate kf:bot_can_harvest run function kf:entities/harvester/harvesting/check_crop

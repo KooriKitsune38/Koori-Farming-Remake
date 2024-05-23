@@ -1,5 +1,8 @@
 #> kf:blocks/trading_post/_trade
 
+# Sound
+playsound minecraft:entity.puffer_fish.blow_up neutral @a ~ ~ ~ 1 1.5
+
 # Insert
 function kf:blocks/trading_post/insert_coin
 
